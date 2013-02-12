@@ -1,0 +1,254 @@
+@import "compass/css3/background-size"
+
+*
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+
+.wrapper
+  margin: auto
+  position: relative
+  width: 75.9% // 960px @ 1280px
+
+
+header
+  background-color: #F6F6F8
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+  padding-top: .8%
+  padding-bottom: .8%
+  position: fixed
+  width: 100%
+  z-index: 10
+
+#logo
+  background-image: url('/images/logo.png')
+  background-repeat: no-repeat
+  background-size: 100%
+  float: left
+  height: 41px
+  width: 130px
+
+nav
+  float: right
+  margin: 11px 0
+
+  li
+    display: inline
+    margin-left: 0.8em
+
+  li:first-child
+    margin-left: 0
+
+  a
+    padding: 0.8em 1em
+    -webkit-transition: color 0.2s ease-in-out
+    -moz-transition: color 0.2s ease-in-out
+    -o-transition: color 0.2s ease-in-out
+    transition: color 0.2s ease-in-out
+
+  a.current
+    background-color: #0091DA
+    border-radius: 8px
+
+
+#about
+  background-image: url('/images/background.jpg')
+
+  height: 1000px
+
+  h1
+    padding-top: 230px
+    line-height: 100px
+
+  h1, p
+    padding-left: 15.625%
+
+  p
+    padding-top: 70px
+    line-height: 40px
+
+#courses
+  backgroud-color: #333333
+
+  height: 1000px
+
+
+// copied from group buddies web site
+
+
+// =============
+// MEDIA QUERIES
+// =============
+
+
+@media (max-width: 1100px)
+  body
+    font-size: 95% !important
+
+  #logo
+    background-size: 90%
+
+  nav li
+    margin-left: 0 !important
+
+  #slogan
+    margin-top: 0.8em
+
+  #who-we-are
+    background-position: -100px 50% !important
+
+  #hire-us
+    background-position: -200px 320px !important
+
+
+@media (max-width: 960px)
+  body
+    font-size: 90% !important
+
+  header
+    padding-bottom: 2.563% !important
+    padding-top: 2.563% !important
+
+  #logo
+    background-image: url('/images/icon.png') !important
+    background-position: 0 !important
+    background-size: 100% !important
+    height: 50px !important
+    width: 50px !important
+
+  nav
+    margin: 10px 0 15px
+
+  #slogan
+    margin-top: 0 !important
+
+  #who-we-are
+    background-position: -170px 50% !important
+
+    p
+      padding-bottom: 5% !important
+
+    .member-thumbnail
+      width: 32% !important
+
+    img
+      width: 80% !important
+
+  #what-we-do
+    background-size: 35%
+
+  #hire-us
+    background-position: -260px 320px !important
+
+  #contact-us
+    background-size: 340px !important
+
+    section
+      display: block
+      margin-bottom: 25px
+      margin-left: 0 !important
+      margin-top: 0
+
+    .contact
+      margin-top: 80px
+
+    .subscribe
+      width: 200px
+
+
+@media (max-width: 840px)
+  #home
+    font-size: 3.2em !important
+
+  #our-work
+    .thumbnail
+      width: 30%
+
+  #hire-us
+    background-position: -320px 320px !important
+
+
+@media (max-width: 780px)
+  #logo
+    background-size: 45px !important
+
+  nav
+    font-size: 0.7em !important
+
+  #slogan
+    font-size: 0.8em !important
+
+  #home
+    font-size: 3em !important
+
+  #who-we-are
+    background-position: -250px 50% !important
+
+  #hire-us
+
+    form
+      width: 100% !important
+
+  #contact-us
+    background-position: 120% 60%
+
+
+@media (max-width: 660px)
+
+  body
+    font-size: 80% !important
+
+  // drop-down menu
+  .touchdown-list
+    display: none
+
+  // drop-down menu
+  .touchdown
+    display: block
+
+  #slogan
+    margin-right: 0 !important
+
+  #who-we-are
+    background-position: -220px 50% !important
+    background-size: 500px
+
+    h1, p, ul
+      padding-left: 42% !important
+
+  #what-we-do
+    background-position: 80% 50%
+
+
+@media (max-width: 610px)
+
+  #who-we-are
+    background-image: none !important
+
+    h1, p, ul
+      padding-left: 0 !important
+
+    ul
+      margin-top: 50px !important
+
+    .member-thumbnail
+      margin-left: 5% !important
+      margin-right: 5% !important
+      width: 90px !important
+
+  #what-we-do
+    background-image: none !important
+
+    li
+      width: 100% !important
+
+  #our-work
+
+    .thumbnail
+      margin: 0 5% 4% !important
+      width: 38% !important
+
+  #contact-us
+    background-image: none !important
+

@@ -1,1 +1,64 @@
-Hello world!
+<%= erb :_head %>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <a href="/" id="logo">GB Academy</a>
+
+      <nav>
+        <ul>
+          <li><a id="nav-about" href="#about">About</a></li>
+          <li><a id="nav-courses" href="#courses">Courses</a></li>
+          <li><a id="nav-contact" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+  	<div class="wrapper">
+  	  <h1>Hello!<br>Welcome to GB Academy!</h1>
+
+  	  <p>We're a young team of self-confessed coffee lovers from northern Portugal. When we're not drinking coffee, we're busy creating beautiful and functional Web sites. We aim to create great user experiences based on simplicity and efficiency.</p>
+
+      <p>We also have a special thing with sharing knowledge. This is way we have created GB Academy.</p>
+  	</div>
+  </section>
+
+  <section id="courses">
+  	<div class="wrapper">
+      <h2>These Are Our Courses</h2>
+      <ul id="courses-list">
+        <li class="course-thumbnail">
+          <a href="/course/ror">
+          	<span>Ruby On Rails</span>
+            <img src="/images/ror_thumbnail.png" alt="Ruby On Rails">
+          </a>
+        </li>
+        <li class="course-thumbnail">
+          <a href="/course/leanpm">
+            <span>Lean Project Manager</span>
+            <img src="/images/leanpm_thumbnail.png" alt="Lean Project Manager">
+          </a>
+        </li>
+        <li class="course-thumbnail">
+          <a href="/course/webdesign">
+            <span>Web Design</span>
+            <img src="/images/webdesign_thumbnail.png" alt="Web Design">
+          </a>
+        </li>
+        <li class="course-thumbnail">
+          <a href="/course/other">
+            <span>Suggest others</span>
+            <img src="/images/other_thumbnail.png" alt="Suggest others">
+          </a>
+        </li>
+      </ul>
+  	</div>
+  </section>
+
+
+  <footer>
+  		eu sou o footer
+  </footer>
+</body>
